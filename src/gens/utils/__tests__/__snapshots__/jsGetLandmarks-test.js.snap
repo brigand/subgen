@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works on complex example 1`] = `
+Object {
+  "classes": Array [
+    Object {
+      "end": 194,
+      "name": "Box",
+      "start": 42,
+      "type": "class",
+    },
+  ],
+  "methods": Array [
+    Object {
+      "end": 105,
+      "name": "constructor",
+      "start": 97,
+      "type": "method",
+    },
+    Object {
+      "end": 110,
+      "name": "getNode",
+      "start": 107,
+      "type": "method",
+    },
+    Object {
+      "end": 193,
+      "name": "render",
+      "start": 112,
+      "type": "method",
+    },
+  ],
+}
+`;

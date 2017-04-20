@@ -1,5 +1,5 @@
 import outdent from 'outdent';
-import jsGetMethods from '../jsGetMethods';
+import jsGetLandmarks from '../jsGetLandmarks';
 
 it(`works`, () => {
   const src = outdent`
@@ -15,10 +15,15 @@ it(`works`, () => {
   }
   `;
 
-  expect(jsGetMethods(src)).toEqual([
-    { name: `c`, start: 3, end: 5 },
-    { name: `d`, start: 6, end: 8 },
-  ]);
+  expect(jsGetLandmarks(src)).toEqual({
+    methods: [
+      { type: `method`, name: `c`, start: 3, end: 5 },
+      { type: `method`, name: `d`, start: 6, end: 8 },
+    ],
+    classes: [
+      { type: `class`, name: `C`, start: 2, end: 9 },
+    ],
+  });
 });
 
 it(`works on complex example`, () => {
@@ -219,5 +224,5 @@ it(`works on complex example`, () => {
     }
   }
   `;
-  expect(jsGetMethods(src)).toMatchSnapshot();
+  expect(jsGetLandmarks(src)).toMatchSnapshot();
 });
