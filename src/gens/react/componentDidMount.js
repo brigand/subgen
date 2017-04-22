@@ -33,4 +33,5 @@ const componentDidMount = (code: string) : string => {
   return lines.join(`\n`);
 };
 
+// module.exports = componentDidMount;
 export default componentDidMount;

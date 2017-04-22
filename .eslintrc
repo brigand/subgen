@@ -10,6 +10,7 @@
   "rules": {
     "no-restricted-syntax": "off",
     "import/extensions": "off",
-    "quotes": ["error", "backtick"]
+    "quotes": "off",
+    "no-use-before-define": "off"
   }
 }

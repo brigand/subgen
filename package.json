@@ -5,17 +5,18 @@
   "main": "lib/index.js",
   "author": "Frankie Bagnardi <f.bagnardi@gmail.com>",
   "license": "MIT",
-  "scripts" {
+  "scripts": {
     "flow": "flow",
     "eslint": "eslint src",
     "build": "babel src --out-dir lib"
   },
   "dependencies": {
+    "babel-cli": "^6.24.1",
+    "bluebird": "^3.5.0",
     "outdent": "^0.3.0",
     "yargs": "^7.1.0"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.2",
     "babel-jest": "^19.0.0",
