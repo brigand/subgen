@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works with constructor 1`] = `
+"class C extends React.Component {
+  foo() {
+
+  }
+  constructor() {
+
+  }
+
+  componentDidMount() {
+    //
+  }
+  render() {
+
+  }
+}"
+`;
+
+exports[`works without constructor 1`] = `
+"class C extends React.Component {
+  componentDidMount() {
+    //
+  }
+  foo() {
+
+  }
+  render() {
+
+  }
+}"
+`;
